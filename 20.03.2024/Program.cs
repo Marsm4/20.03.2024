@@ -22,10 +22,16 @@ class MainClass
 
     static int CountSequences(int a, int b)
     {
+        if (a == b)
+        {
+            return a + 1;
+        }
+
         if (a > b + 1)
         {
             return 0;
         }
+
         int result = 1;
         for (int i = 0; i < a; i++)
         {
